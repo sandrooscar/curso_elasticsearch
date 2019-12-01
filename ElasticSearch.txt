@@ -1,0 +1,42 @@
+*** AULA01
+Portas 9200 e 9300
+plugin kopf para medir recursos do elastic, apaste deve ser renomeada para kopf e copiada para plugin do elastisearch
+http://localhost:9200/_plugin/kopf
+PUT /catalogo/_settings
+{
+    "index" : {
+        "number_of_replicas" : 0
+    }
+}
+
+* Para verificar quanto documentos existem em um tipo dentro de um índice, utilizamos o seguinte comando:
+
+GET /<indice>/<tipo>/_count
+
+* Para localizar um documento pelo seu identificador, basta utilizar o seguinte comando:
+
+GET /<indice>/<tipo>/<identificator>
+
+* Por fim, para retornar todos os documentos em de um tipo sem aplicar filtro algum, basta utilizar o comando:
+
+GET /<indice>/<tipo>/_search
+
+=> Implicitamente utiliza http://localhost:9200/<indice>/<tipo>/_search
+
+O que aprendemos?
+O que é e para que serve o ElasticSearch.
+Como fazer uma instalação básica do ElasticSeach a ser usada em uma única máquina.
+Como instalar plugins no ElasticSearch.
+Como utilizar um cliente REST para criar e localizar documentos por identificador, listar todos os documentos ou aplicar um valor simples para consulta.
+Como alterar o número de réplicas de um índice.
+
+* Para listar todos os documentos sem filtro nenhum podemos usar:
+
+GET /catalogo/pessoas/_search
+{}
+Para aplicar algum filtro usa-se o parâmetro o parâmetro q:
+
+GET /catalogo/pessoas/_search?q=futebol
+
+http://solr-vs-elasticsearch.com/
+*** AULA02
