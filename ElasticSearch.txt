@@ -39,4 +39,74 @@ Para aplicar algum filtro usa-se o parâmetro o parâmetro q:
 GET /catalogo/pessoas/_search?q=futebol
 
 http://solr-vs-elasticsearch.com/
+
 *** AULA02
+HTTP HEAD
+executado via curl
+- retorna apenas cabecalhos http
+- não retorna o documento
+- server para saber se existe o documento
+Diz se o documento existe ou não sem carregaro o documento
+
+é equivalente ao:
+select 1 from pedido where pedido = 1 
+
+curl -XHEAD -v http://localhost:9200/catalogo/pessoas/1
+
+_version é o controle de versão dos documentos quando atualizados
+
+Acessando HEAD /index/type/id é equivalente ao comando:
+
+select 1 from TYPE where id = ID;
+
+verbo POST atualizando documento parcial
+catalogo/pessoas/1/_update
+{
+  "doc": {
+    "nome": "Rob Halford"
+  }
+}
+
+Normalmente o POST cria documento
+catalogo/pessoas/150
+POST /catalogo/pessoas
+{
+    "nome" : "Tony Stark",
+    "interesses" : ["futebol", "música", "literatura"],
+    "cidade" : "São Paulo",
+    "formação" : "Letras",
+    "estado" : "SP",
+    "país" : "Brasil"
+}
+
+Documents no ElasticSearch são imutaveis
+
+* Sobre Shard
+Quando existe necessidade de aramazenar o indice em várias lugares, é necessário criar shard (tradução "caquinhos")
+(no mundo banco de dados é visto como partição). É pegar 10Gb e quebrar em shard de 2.5Gb.
+
+=> Shard não devem ultrapassar 50Gb
+
+Shard primária (primary shards): é a shard onde as operações de escrita como criação, atualização ou remoção de um documento acontece primeiro.
+Shard réplica (replica shard): é a shard que, uma vez que a operação de escrita tenha sido concluída com sucesso na sua respectiva shard primária, recebe a mesma operação para que ela seja replicada. A operação só será confirmada para o cliente quando todas as réplicas confirmarem a replicação. Logo, quando recebemos o HTTP OK para uma operação de escrita, sabemos que a informação esta segura em todas as réplicas.
+
+O que aprendemos?
+O que é um índice e um tipo.
+Como utilizar a API Rest para operações de criação, atualização, remoção e verificação de existência de documentos no ElasticSearch.
+A analogia entre ElasticSearch e um banco de dados relacionais.
+O que são shards, réplicas e qual a sua importância.
+
+O comando HEAD não retorna conteúdo, ele verifica se o documento, cujo identificador é ID (no exemplo do exercício, o ID é 1), existe para o tipo TYPE (no exemplo do exercício, o TYPE é pessoas) no índice INDEX (no exemplo do exercício, o INDEX é catalogo). Caso o documento exista, é retornado o código HTTP 200 , caso contrário, é retornado o código HTTP 404.
+
+PUT é obrigatório. Caso já exista um documento com esse id, o documento será substituído. Caso não exista um documento com esse id, ele será criado.
+
+PUT substitui o documento, ou seja, se fizermos:
+
+PUT /catalogo/pessoas/1
+{
+    "nome": "Douglas Quintanilha"
+}
+Substituiremos o documento de id, logo ele só conterá o atributo nome.
+
+
+

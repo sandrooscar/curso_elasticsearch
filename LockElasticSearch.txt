@@ -1,0 +1,13 @@
+ElasticSearch possui um controle de versionamento baseado em lock otimista. Basicamente funciona assim. Quando utilizado este mecanismo, uma atualização só ocorre com sucesso quando a versão do documento no ElasticSearch é a mesma da versão do documento indicado na requisição. Por exemplo:
+
+PUT /catalogo/pessoas/1?version=1
+{
+    … atributos a serem atualizados
+}
+Caso alguém já tenha atualizado o documento, a versão terá sido incrementada para 2 e nossa requisição falhará. O código HTTP de resposta será 409 Conflict e a mensagem de erro será algo como:
+
+{
+    "error" : "VersionConflictEngineException[[catalogo][2] [pessoas][1]: version conflict, current [2], provided [1]]",
+    "status" : 409
+}
+ElasticSearch permite que um sistema de versionamento externo, como por exemplo o uso de timestamps seja utilizado. Para saber mais, visite este a página https://www.elastic.co/guide/en/elasticsearch/guide/current/optimistic-concurrency-control.html
