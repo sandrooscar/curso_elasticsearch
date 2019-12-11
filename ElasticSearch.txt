@@ -108,5 +108,73 @@ PUT /catalogo/pessoas/1
 }
 Substituiremos o documento de id, logo ele só conterá o atributo nome.
 
+*** AULA03 - Pesquisando e analisando seus dados
+catalogo/pessoas/_search?q=futebol
+equivale
+catalogo/pessoas/_search?q=_all:futebol
 
+busca campo especifico (como nos bds tradicionais)
+catalogo/pessoas/_search?q=estado:sp
+
+* Cabecalho
+took => tempo em milisegundos
+max_score: valor entre 0 e 1. Relevância ou valor da semelhança
+
+* Paginacao
+/catalogo/pessoas/_search?q=futebol&size=1&from=0
+
+O que aprendemos?
+O campo _all e como ele é utilizado.
+Podemos especificar o campo na busca usando campo:termo.
+ElasticSearch retorna 10 resultados por padrão.
+Entender as estatísticas que são parte da resposta de requisições de busca, como tempo de resposta e hits.
+
+Quando omitimos um campo específico na busca, o Elastic Search assume que queremos buscar no campo _all, logo a resposta correta é:
+
+_search?q=_all:futebol
+
+Quando queremos limitar a busca apenas um campo, basta fazer:
+
+_search?q=interesses:futebol
+
+A sintaxe sempre é campo:termo , mas se queremos adicionar mais um campo para a busca, temos que utilizar o caractere & para unir as duas buscas, deste modo;
+
+_search?q=interesses:futebol&cidade:rio
+
+Para limitarmos a quantidade de dados devemos utilizar o termo size, passando com o = a quantidade que queremos limitar.
+
+Então, fazemos a buscar normal:
+
+_search?q=interesses:futebol
+
+mas vamos utilizar o operador & para adicionar um limite a busca com o size:
+
+_search?q=interesses:futebol&size=50
+
+Assim esta busca nos retornará apenas os primeiros 50 registros !
+
+Relembrando, sempre que realizamos uma busca, devemos utilizar a sintaxe campo:termo, então se queremos buscar pelo termo fermento no campo ingredientes, vamos usar ingredientes:fermento, mas como queremos limitar a 30 resultados, utilizaremos o operador & para concatenar o size=30 ao resto da busca, ficando no final:
+
+_search?q=ingredientes:fermento&size=3
+
+Para ajudar nosso amigo desenvolvedor, temos que utilizar o conhecimentos que já temos para selecionar os ingredientes que possuem farinha:
+
+_search?q=ingredientes:farinha
+
+Além disso, também precisamos limitar o tamanho dos resultados para 10, então vamos utilizar o operador & para adicionar um novo limitador a busca:
+
+_search?q=ingredientes:farinha&size=10
+
+E precisamos que a nossa exibição comece a partir do vigésimo resultado, e para isto vamos utilizar o termo from=20 a nossa busca , concatenando com o operado &:
+
+_search?q=ingredientes:farinha&size=10&from=20
+
+Assim, nossa busca irá retornar todas as receitas que tem farinha nos ingredientes, mostrando em lotes de 10 resultados, a partir do vigésimo!
+
+API Scroll
+Quando utilizamos paginação simples, temos que tomar cuidado para não causarmos instabilidade no cluster. Caso solicitemos 10.000 registros, todas as shards participantes na consulta podem retornar esta quantidade. Por exemplo, caso tenhamos 3 shards com 100.000 documentos em cada e pedimos os primeiros 10.000 resultados, o nó coordenador terá de processar 30.000 documentos, executar a ordenação e pegar os primeiros 10.000.
+
+Para detalhes, veja este link:
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-scroll.html
 
