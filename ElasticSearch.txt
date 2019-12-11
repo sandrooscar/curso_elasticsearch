@@ -178,3 +178,16 @@ Para detalhes, veja este link:
 
 https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-scroll.html
 
+*** AULA04 - Mapeamento de tipos
+Não posso alterar tye das propriedades de um tipo
+Posso criar outra propriedade para importar os dados da campo antigo
+Por padrão, quando criamos documentos no ElasticSearch em índices e tipos que não foram previamente criados, o próprio ElasticSeach analisa o primeiro documento recebido e infere os tipos de dados. Para olharmos o que foi inferido, basta utilizamos a API _mapping:
+
+GET catalogo/_mapping/pessoas
+
+Importante: Ainda que novos documentos possam ter novos atributos que não foram previamente mapeados, mapeamentos para atributos já existentes não podem ser alterados.
+https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html
+
+Exercicio exemplo utilizando date
+/my_index_date/doc_date
+

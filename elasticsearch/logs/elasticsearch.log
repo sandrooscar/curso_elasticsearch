@@ -1,0 +1,557 @@
+[2019-12-11 05:32:02,960][INFO ][node                     ] [The Night Man] version[2.3.1], pid[10960], build[bd98092/2016-04-04T12:25:05Z]
+[2019-12-11 05:32:02,967][INFO ][node                     ] [The Night Man] initializing ...
+[2019-12-11 05:32:04,935][INFO ][plugins                  ] [The Night Man] modules [reindex, lang-expression, lang-groovy], plugins [kopf], sites [kopf]
+[2019-12-11 05:32:05,007][INFO ][env                      ] [The Night Man] using [1] data paths, mounts [[S.O (C:)]], net usable_space [28gb], net total_space [243.8gb], spins? [unknown], types [NTFS]
+[2019-12-11 05:32:05,008][INFO ][env                      ] [The Night Man] heap size [910.5mb], compressed ordinary object pointers [true]
+[2019-12-11 05:32:09,944][INFO ][node                     ] [The Night Man] initialized
+[2019-12-11 05:32:09,944][INFO ][node                     ] [The Night Man] starting ...
+[2019-12-11 05:32:11,109][INFO ][transport                ] [The Night Man] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-12-11 05:32:11,146][INFO ][discovery                ] [The Night Man] elasticsearch/gyg5rxELT8Gjz9ZtvcvkHg
+[2019-12-11 05:32:15,694][INFO ][cluster.service          ] [The Night Man] new_master {The Night Man}{gyg5rxELT8Gjz9ZtvcvkHg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2019-12-11 05:32:15,839][INFO ][gateway                  ] [The Night Man] recovered [1] indices into cluster_state
+[2019-12-11 05:32:17,030][INFO ][cluster.routing.allocation] [The Night Man] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[catalogo][4]] ...]).
+[2019-12-11 05:32:17,605][INFO ][http                     ] [The Night Man] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-12-11 05:32:17,606][INFO ][node                     ] [The Night Man] started
+[2019-12-11 05:32:45,869][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:33:15,894][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:33:45,923][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:34:15,941][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:34:45,945][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:35:15,956][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:35:45,958][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:36:15,960][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:36:45,962][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:37:15,965][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:37:45,967][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:38:15,969][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:38:45,976][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:39:15,979][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:39:45,981][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:40:15,990][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 27.9gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:40:45,992][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:41:15,995][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:41:45,997][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:42:16,001][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:42:46,015][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:43:16,018][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:43:46,019][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:44:16,031][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:44:46,034][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:45:16,035][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:45:46,042][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:46:16,045][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:46:46,047][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:47:16,068][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:47:46,070][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:48:16,072][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:48:46,078][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:49:16,081][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:49:46,082][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:50:16,087][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:50:46,090][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:51:05,351][INFO ][cluster.metadata         ] [The Night Man] [catalogo] update_mapping [pessoas]
+[2019-12-11 05:51:16,096][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:51:46,098][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:52:16,100][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:52:46,111][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:53:16,125][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:53:46,135][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:54:16,142][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:54:46,146][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:55:16,148][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:55:46,156][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:56:16,160][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:56:46,180][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:57:16,213][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:57:46,222][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:58:16,224][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:58:46,226][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:59:16,229][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 05:59:46,231][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:00:15,039][INFO ][cluster.metadata         ] [The Night Man] [catalogo] create_mapping [my_index_sample_date]
+[2019-12-11 06:00:16,241][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:00:46,296][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:01:16,346][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:01:46,352][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:02:16,358][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:02:38,289][DEBUG][action.admin.indices.create] [The Night Man] [my_index] failed to create
+MapperParsingException[Failed to parse mapping [properties]: Root mapping definition has unsupported parameters:  [date : {type=date}]]; nested: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]];
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:332)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:45)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:468)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:772)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.checkNoRemainingFields(DocumentMapperParser.java:171)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:159)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:99)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:498)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:288)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:329)
+	... 8 more
+[2019-12-11 06:02:46,361][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:02:59,873][DEBUG][action.admin.indices.create] [The Night Man] [my_index] failed to create
+MapperParsingException[Failed to parse mapping [properties]: Root mapping definition has unsupported parameters:  [date : {type=date}]]; nested: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]];
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:332)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:45)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:468)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:772)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.checkNoRemainingFields(DocumentMapperParser.java:171)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:159)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:99)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:498)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:288)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:329)
+	... 8 more
+[2019-12-11 06:03:16,371][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:03:25,420][DEBUG][action.admin.indices.create] [The Night Man] [my_index] failed to create
+MapperParsingException[Failed to parse mapping [properties]: Root mapping definition has unsupported parameters:  [date : {type=date}]]; nested: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]];
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:332)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:45)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:468)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:772)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.checkNoRemainingFields(DocumentMapperParser.java:171)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:159)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:99)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:498)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:288)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:329)
+	... 8 more
+[2019-12-11 06:03:30,269][DEBUG][action.admin.indices.create] [The Night Man] [my_index] failed to create
+MapperParsingException[Failed to parse mapping [properties]: Root mapping definition has unsupported parameters:  [date : {type=date}]]; nested: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]];
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:332)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:45)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:468)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:772)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.checkNoRemainingFields(DocumentMapperParser.java:171)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:159)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:99)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:498)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:288)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:329)
+	... 8 more
+[2019-12-11 06:03:46,389][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:04:16,403][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:04:46,405][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:05:16,419][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:05:46,423][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:06:14,622][DEBUG][action.admin.indices.create] [The Night Man] [my_index] failed to create
+MapperParsingException[Failed to parse mapping [properties]: Root mapping definition has unsupported parameters:  [date : {type=date}]]; nested: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]];
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:332)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:45)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:468)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:772)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: MapperParsingException[Root mapping definition has unsupported parameters:  [date : {type=date}]]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.checkNoRemainingFields(DocumentMapperParser.java:171)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:159)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:99)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:498)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:288)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$1.execute(MetaDataCreateIndexService.java:329)
+	... 8 more
+[2019-12-11 06:06:16,428][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:06:46,442][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:07:12,147][INFO ][cluster.metadata         ] [The Night Man] [my_index_date] creating index, cause [api], templates [], shards [5]/[0], mappings []
+[2019-12-11 06:07:12,427][INFO ][cluster.routing.allocation] [The Night Man] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[my_index_date][4]] ...]).
+[2019-12-11 06:07:16,445][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:07:46,447][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:08:16,451][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:08:46,453][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:09:08,222][DEBUG][action.admin.indices.mapping.put] [The Night Man] failed to put mappings on indices [[my_index_date]], type [_doc_date]
+InvalidTypeNameException[Document mapping type name can't start with '_']
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:288)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:468)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:772)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-12-11 06:09:08,224][DEBUG][action.index             ] [The Night Man] failed to execute [index {[my_index_date][_doc_date][AW70AS1mbm2upwmlyuVh], source[{
+  "mappings": {
+    "properties": {
+      "date": {
+        "type": "date"
+      }
+    }
+  }
+}]}] on [[my_index_date][1]]
+InvalidTypeNameException[Document mapping type name can't start with '_']
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:288)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230)
+	at org.elasticsearch.cluster.service.InternalClusterService.runTasksForExecutor(InternalClusterService.java:468)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:772)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-12-11 06:09:16,455][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:09:32,919][INFO ][cluster.metadata         ] [The Night Man] [my_index_date] create_mapping [doc_date]
+[2019-12-11 06:09:46,457][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:09:59,189][INFO ][cluster.metadata         ] [The Night Man] [my_index_date] update_mapping [doc_date]
+[2019-12-11 06:10:16,460][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:10:46,461][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:11:16,467][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:11:46,473][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:12:16,475][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:12:46,478][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:13:16,479][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:13:46,483][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:14:16,496][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:14:18,085][INFO ][cluster.metadata         ] [The Night Man] [my_index_date] update_mapping [doc_date]
+[2019-12-11 06:14:46,502][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:15:16,504][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:15:46,518][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:16:16,534][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:16:46,536][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:17:16,544][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:17:46,546][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:18:16,548][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:18:46,549][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:19:16,551][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:19:46,553][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:20:16,574][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:20:46,590][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:20:50,973][INFO ][cluster.metadata         ] [The Night Man] [catalogo] update_mapping [pessoas]
+[2019-12-11 06:21:01,832][DEBUG][action.search            ] [The Night Man] [catalogo][4], node[gyg5rxELT8Gjz9ZtvcvkHg], [P], v[8], s[STARTED], a[id=xyc94srBRXmnQ98Vr7egyQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@506238a7] lastShard [true]
+RemoteTransportException[[The Night Man][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+Caused by: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: SearchParseException[failed to parse search source. unknown search element [nome]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:836)
+	... 12 more
+[2019-12-11 06:21:01,832][DEBUG][action.search            ] [The Night Man] [catalogo][1], node[gyg5rxELT8Gjz9ZtvcvkHg], [P], v[8], s[STARTED], a[id=ZJqCJmigQF2XKV16b7xRxg]: Failed to execute [org.elasticsearch.action.search.SearchRequest@506238a7] lastShard [true]
+RemoteTransportException[[The Night Man][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+Caused by: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: SearchParseException[failed to parse search source. unknown search element [nome]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:836)
+	... 12 more
+[2019-12-11 06:21:01,832][DEBUG][action.search            ] [The Night Man] [catalogo][0], node[gyg5rxELT8Gjz9ZtvcvkHg], [P], v[8], s[STARTED], a[id=DrrHcX2tS06WMIKRco1S9Q]: Failed to execute [org.elasticsearch.action.search.SearchRequest@506238a7] lastShard [true]
+RemoteTransportException[[The Night Man][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+Caused by: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: SearchParseException[failed to parse search source. unknown search element [nome]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:836)
+	... 12 more
+[2019-12-11 06:21:01,832][DEBUG][action.search            ] [The Night Man] [catalogo][2], node[gyg5rxELT8Gjz9ZtvcvkHg], [P], v[8], s[STARTED], a[id=ljtMZj0vTly_fcQrGRSVIA]: Failed to execute [org.elasticsearch.action.search.SearchRequest@506238a7]
+RemoteTransportException[[The Night Man][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+Caused by: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: SearchParseException[failed to parse search source. unknown search element [nome]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:836)
+	... 12 more
+[2019-12-11 06:21:01,832][DEBUG][action.search            ] [The Night Man] [catalogo][3], node[gyg5rxELT8Gjz9ZtvcvkHg], [P], v[8], s[STARTED], a[id=xuYp5fpISdulTRXVDDyqIA]: Failed to execute [org.elasticsearch.action.search.SearchRequest@506238a7] lastShard [true]
+RemoteTransportException[[The Night Man][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+Caused by: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: SearchParseException[failed to parse search source. unknown search element [nome]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:836)
+	... 12 more
+[2019-12-11 06:21:01,854][DEBUG][action.search            ] [The Night Man] All shards failed for phase: [query]
+RemoteTransportException[[The Night Man][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+Caused by: SearchParseException[failed to parse search source [{
+  "nome": "Super Mario",
+  "interesses": [
+    "computação",
+    "games",
+    "carros"
+  ],
+  "força": 3,
+  "velocidade": 55.3,
+  "cidade": "Kyoto",
+  "formação": "Encanador",
+  "estado": "Honshu",
+  "país": "Japão",
+  "nascimento": "1982-01-21"
+}]]; nested: SearchParseException[failed to parse search source. unknown search element [nome]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: SearchParseException[failed to parse search source. unknown search element [nome]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:836)
+	... 12 more
+[2019-12-11 06:21:16,600][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:21:46,602][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:22:16,604][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:22:46,608][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:23:16,609][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:23:46,612][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:24:16,614][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:24:46,616][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:25:16,617][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:25:46,620][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:26:16,621][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:26:46,623][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:27:16,625][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:27:46,639][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:28:16,641][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:28:46,650][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:29:16,650][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:29:46,652][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:30:05,415][INFO ][cluster.metadata         ] [The Night Man] [catalogo] update_mapping [pessoas]
+[2019-12-11 06:30:16,661][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:30:46,663][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:31:16,666][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:31:46,671][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:32:16,684][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:32:46,686][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.4%], replicas will not be assigned to this node
+[2019-12-11 06:33:16,690][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.5%], replicas will not be assigned to this node
+[2019-12-11 06:33:46,703][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.5%], replicas will not be assigned to this node
+[2019-12-11 06:34:16,720][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.5%], replicas will not be assigned to this node
+[2019-12-11 06:34:46,721][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.5%], replicas will not be assigned to this node
+[2019-12-11 06:35:16,747][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.5%], replicas will not be assigned to this node
+[2019-12-11 06:35:46,748][INFO ][cluster.routing.allocation.decider] [The Night Man] low disk watermark [85%] exceeded on [gyg5rxELT8Gjz9ZtvcvkHg][The Night Man][C:\PESSOAL\dev\alura2019\curso_elasticSearch\elasticsearch\data\elasticsearch\nodes\0] free: 28gb[11.5%], replicas will not be assigned to this node
