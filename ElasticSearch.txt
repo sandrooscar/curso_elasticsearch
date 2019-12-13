@@ -191,3 +191,102 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.ht
 Exercicio exemplo utilizando date
 /my_index_date/doc_date
 
+O que aprendemos?
+Como verificar os mappings para nossos documentos.
+Tipos de dados existentes do ElasticSearch.
+Inferência de tipos pelo ElasticSearch.
+
+*** AULA05 - Quebrando os textos com Analyzers
+Analyzer  whitespace
+faz split das palavras 
+
+Analyzer simples (simple)
+tira tudo que não tiver letra e reduz pra lowercase
+
+Analyzer padrão (standard)
+tira espaços e pontuação, passa pra lowercase e NÂO REMOVE os números
+
+Analyzer idiomas (portuguese, english)
+técnicas de remoção de acentos e plural por exemplo, permite criar sinônimos.
+
+Analyzer padrão: Este é o analyzer padrão usado pelo ElasticSearch e em geral funciona bem independente do idioma. Ele funciona quebrando o texto em palavras removendo pontuações e passando todo conteúdo para letras minúsculas. Números existentes no texto são mantidos. Por exemplo: "Eu nasci há 10 mil (sim, 10 mil) anos atrás" gera as seguintes entradas "eu", "nasci", "há", "10", "mil", "sim", "10", "mil", "anos", "atrás".
+
+Analyzer simples: Quebra o texto em tudo o que não seja uma letra e passando todo o texto para letras minúsculas. Como números não são letras, eles não geram entradas. E.g.: "Eu nasci há 10 mil (sim, 10 mil) anos atrás" gera as seguintes entradas "eu", "nasci", "há", "mil", "sim", "mil", "anos", "atrás".
+
+Analyzer de espaço em branco: Quebra o texto por espaços em branco. Não há alteração na caixa das letras. Por exemplo: "Eu nasci há 10 mil (sim, 10 mil) anos atrás" gera as seguintes entradas "Eu", "nasci", "há", "10", "mil", "(sim", "10", "mil)", "anos", "atrás".
+
+Analyzers específicos para idiomas: São analyzers que quebram o texto assim como o analyzer padrão, porém são capazes de aplicar peculiaridades do idioma e melhorar a geração das entradas para um idioma em específico. Técnicas como singularização dos termos, remoção de palavras que não possuem relevância para o resultado, como palavras comuns do idioma e uso da palavra na sua forma mais raíz (conhecido como stemming), são aplicadas.
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-analyzers.html
+
+https://www.elastic.co/guide/en/elasticsearch/guide/current/inverted-index.html
+
+O que aprendemos?
+Como a busca exata e a busca de texto cheio são diferentes.
+O que são e como usar os analyzers para incrementar nossas buscas.
+Como verificar como um analyzer vai indexar um determinado texto.
+Como alterar o analyzer do campo _all do padrão para portuguese e melhorar nossas buscas.
+
+Na criação do índice, indicamos a configuração de cada atributo que queremos que seja analizado, e em seguida dizemos qual tipo do analizador iremos usar.
+
+Repare também que fizemos configurações individuais em cada atributo, nos permitindo escolher qual analizador isoladamente, e até mesmo deixando de usar o analizer no caso do atributo estado.
+
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 0
+    }
+  },
+  "mappings": {
+    "pessoas_v2": {
+      "_all": {
+        "type": "string",
+        "index": "analyzed",
+        "analyzer": "portuguese"
+      },
+      "properties": {
+        "cidade": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "estado": {
+          "type": "string"
+        },
+        "formação": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "interesses": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "nome": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "país": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        }
+      }
+    }
+  }
+}
+
+O padrão do ElasticSearch é buscar no documento um termo ou (OR, em inglês) outro. Para buscar documentos que contenham os dois termos (musica e brasil), nós precisamos utilizar o AND. Atenção para a caixa alta, se for em caixa baixa, o ElasticSearch interpretará como mais um termo a ser buscado.
+
+Logo, a opção correta é:
+
+/catalogo_v2/pessoas/_search?q=musica+AND+brasil
+
+O campo _all pode ser totalmente customizado ou mesmo desabilitado. Neste capítulo nós trocamos o analyzer standard para o analyzer portuguese, porém podemos ir mais adiante e definir, por exemplo quais atributos devem ir para o campo _all e qual o peso (boost) de cada atributo em uma busca.
+
+Objetos aninhados são mapeados de maneira semelhante a objetos não aninhados. Basta utilizar como tipo de dados object e definir as propriedades. Esta abordagem funciona de forma recursiva.
+
+https://www.elastic.co/guide/en/elasticsearch/guide/current/complex-core-fields.html
