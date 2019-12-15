@@ -595,6 +595,50 @@ _bulk API para fazer ingestão de registros em grandes volumes.
 
 https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html
 
+*** AULA09- Instalando Kibana para visualização de dados
+navegador request => kibana request => elasticsearch
+Kibana utiliza porta 5601
+kibana procura direto a porta 9200 no elasticsearch
+kibana procura o elasticsearch na maquina local
+Na tela inicial é solicitada a confiduração do indice do ES no kibana
+
+No ES:
+Selecione o checkbox special para ver o índice .kibana. Em seguida clique na seta no canto direito da descrição do índice para ver as opções.
+
+No kibana:
+
+Existem duas coisas importantes a sabermos neste momento:
+
+O índice que queremos mapear possui algum campo de data que queremos utilizar como padrão para filtros? No nosso caso a resposta é não, logo podemos desmarcar o checkbox.
+Qual o nome ou padrão de nome dos índices que queremos mapear? No nosso caso, temos apenas um índice, cujo nome é pessoas. 
+
+Kibana Discover tab
+Discover é a sub-aplicação padrão dentro do Kibana. Nesta sub-aplicação, podemos simular buscas em formato livre (free-form) ou mesmo buscas, utilizando a sintaxe do Apache Lucene.
+
+Esta aplicação nos permite ter o gostinho de busca a lá Google, com highlighting dos termos procurados no resultado e sem precisarmos criar um website para tal.
+
+O que aprendemos?
+O que é e como instalar a aplicação Kibana.
+Como configurar um índice na aplicação Kibana.
+Como a Discover Tab pode nos ajudar na busca de dados.
+Com o Kibana instalador, podemos seguir com os próximos exercícios!
+
+Mas importante, caso venha a utilizar um ElasticSearch que não esteja instalado localmente ou tenha alterado a porta padrão 9200, é necessário atualizar o endereço do ElasticSearch no arquivo config/kibana.yml. Por padrão, Kibana se conecta no endereço http://localhost:9200.
+
+INDICES COM EVENTOS BASEADOS EM TEMPO
+
+É muito comum possuir documentos que representam eventos que aconteceram em algum momento no passado. Por exemplo, imagine um índice que armazena documentos com informações de vendas de produtos. Quando mapeamos um índice que possua um campo que indica quando, podemos indicar qual o nome do atributo durante o mapeamento e ganhar acesso a algumas funcionalidades.
+
+Exemplos de funcionalidades são histograma por data, filtro global com opções como Último Mês, Última semana, entre outras.
+
+Para saber mais, acesse o link:
+
+https://www.elastic.co/guide/en/kibana/current/settings.html#settings-create-pattern
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html
+
+
+
 
 
 
