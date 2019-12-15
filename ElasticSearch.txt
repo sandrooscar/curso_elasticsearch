@@ -290,3 +290,10 @@ O campo _all pode ser totalmente customizado ou mesmo desabilitado. Neste capít
 Objetos aninhados são mapeados de maneira semelhante a objetos não aninhados. Basta utilizar como tipo de dados object e definir as propriedades. Esta abordagem funciona de forma recursiva.
 
 https://www.elastic.co/guide/en/elasticsearch/guide/current/complex-core-fields.html
+
+*** AULA06 - Analyzers com Sinônimos
+
+Define o analisador e sinonimo utilizado
+/indice_com_sinonimo/_analyze?analyzer=sinonimos
+
+
