@@ -438,6 +438,163 @@ Usamos "search_analyzer": "sinonimos" para indicar que, durante buscas no atribu
 O analyzer sinonimos utiliza filtros existentes e filtros que copiamos do analyzer portuguese, deste modo simulamos o mesmo comportamento do analyzer e ainda adicionamos os sinônimos na lista.
 
 
+*** AULA08 - Carregando dados no ElasticSearch
+Importar dados em massa:
+
+<indice>/<tipo>/_bulk
+
+Multi-campos
+Como parte da definição de um atributo no mapeamento de um índice, basta adicionar os campos extras a serem gerados para um atributo e sua configuração. Veja o exemplo a seguir para o atributo nome:
+
+"nome": {
+    "type": "string",
+    "fields": {
+        "original": { 
+            "type": "string", 
+            "index": "not_analyzed" 
+        }
+    },
+    "index": "analyzed",
+    "analyzer": "portuguese"
+}
+O ElasticSearch irá criar um campo chamado nome.original e manterá uma cópia do valor para o atributo nome, sem analisá-lo. Vale notar que original poderia ser qualquer nome válido de campo. É comum o uso nomes como raw ou plain.
+
+Criando nosso índice
+Para não confundir com os índices anteriores (fique à vontade para removê-los), utilizaremos um nome diferente. Chamaremos nosso índice de pessoas e nosso tipo de registros e faremos uso de tudo o que aprendemos até o momento, inclusive multi-campos. Segue a configuração do nosso índice:
+
+PUT /pessoas
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 0
+    },
+    "analysis": {
+      "filter": {
+         "portuguese_stop": {
+          "type":       "stop",
+          "stopwords":  "_portuguese_" 
+        },
+        "portuguese_stemmer": {
+          "type": "stemmer",
+          "language": "light_portuguese"
+        },
+        "filtro_de_sinonimos": {
+          "type": "synonym",
+          "synonyms": [
+            "futebol => futebol,society",
+            "society => society,futebol",
+            "volei,voleibol,volleyball",
+            "esport => esport,futebol,society,volei,basquet",
+            "exat => exat,matematic,fisic,computaca",
+            "arte => arte,pintur,teatr,music,cinem"
+          ]
+        }
+      },
+      "analyzer": {
+        "sinonimos": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "portuguese_stop",
+            "portuguese_stemmer",
+            "filtro_de_sinonimos"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "registros": {
+      "_all": {
+        "type": "string",
+        "index": "analyzed",
+        "analyzer": "portuguese"
+      },
+      "properties": {
+        "cidade": {
+          "type": "string",
+          "fields": {
+            "original": { 
+              "type": "string", 
+              "index": "not_analyzed" 
+            }
+          },
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "estado": {
+          "type": "string",
+          "index": "not_analyzed" 
+        },
+        "formação": {
+          "type": "string",
+          "fields": {
+            "original": { 
+              "type": "string", 
+              "index": "not_analyzed" 
+            }
+          },
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "interesses": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese",
+          "search_analyzer": "sinonimos"
+        },
+        "nome": {
+          "type": "string",
+          "fields": {
+            "original": { 
+              "type": "string", 
+              "index": "not_analyzed" 
+            }
+          },
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "país": {
+          "type": "string",
+          "fields": {
+            "original": { 
+              "type": "string", 
+              "index": "not_analyzed" 
+            }
+          },
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        }
+      }
+    }
+  }
+}
+
+Usando a API _bulk
+ElasticSearch possui a API _bulk para permite carregamento de dados em massa. A API é tão flexível que acaba se tornando um pouco confusa, pois ela permite que um mesmo request possua comandos para criar, atualizar e remover documentos em diferentes índices.
+
+Por questão de simplicidade, vamos focar no que precisamos para atingir nossos objetivos. A _bulk API é suportada no método POST e a usaremos da seguinte maneira:
+
+POST /indice/tipo/_bulk (1)
+{"create": {}} (2)
+{"campo1": "valor1", "campo_n": "valor_n"} (3)
+{"create": {}} (4)
+{"campo1": "valor2", "campo_n": "valor_n2"} (5)
+Onde:
+
+(1) Índice e tipo onde API _bulk será executada
+(2) Ação e metadado. Neste caso, estamos interessados apenas na criação de documentos, logo usamos create. Junto à operação, são informados valores como índice, tipo e identificador do registro que vem a seguir. Como informamos índice e tipo, e utilizaremos a geração automática de identificadores, podemos ocultar os demais valores.
+(3) O documento a ser inserido.
+(4) A ação e metadado para o próximo documento da requisição.
+(5) O próximo documento da requisição. Note que (2) e (3) são repetidos para cada documento parte da requisição.
+
+O que aprendemos?
+Multi-campos e como eles nos ajudam a preservar os valores originais de atributos que são indexados.
+_bulk API para fazer ingestão de registros em grandes volumes.
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html
+
 
 
 
