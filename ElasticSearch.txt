@@ -638,7 +638,10 @@ https://www.elastic.co/guide/en/kibana/current/settings.html#settings-create-pat
 https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html
 
 
+*** AULA09 e 10 sobre o kibana
+Agregações são suportadas diretamente no ElasticSeach. Kibana apenas nos ajuda a construir as requisições. Existem diversos tipos de agregações no ElasticSearch. Para saber mais detalhes sobre este assunto, visite o link a seguir:
 
+https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html
 
 
 
